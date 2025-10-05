@@ -81,3 +81,24 @@ With your virtual environment activated, start the FastAPI server using Uvicorn:
 
 ```bash
 uvicorn orchestrator.app:app --reload
+```
+The application will be running at http://127.0.0.1:8000
+
+### 3. How to Test the Application
+You can test the application by sending a POST request to the /invoke endpoint.
+
+Using PowerShell (Windows)
+Open a new terminal and use the Invoke-WebRequest command:
+
+```bash
+Invoke-WebRequest -Uri "[http://127.0.0.1:8000/invoke](http://127.0.0.1:8000/invoke)" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"user_message": "Make me 5 easy flashcards on the water cycle for my science class."}'
+```
+Using cURL (macOS/Linux/WSL)
+Open a new terminal and use the curl command:
+
+```Bash
+curl -X POST "[http://127.0.0.1:8000/invoke](http://127.0.0.1:8000/invoke)" \
+-H "Content-Type: application/json" \
+-d '{"user_message": "Make me 5 easy flashcards on the water cycle for my science class."}'
+```
+You will see the step-by-step execution logged in the terminal where the server is running, and the final JSON payload will be returned as the API response.
