@@ -6,7 +6,7 @@
 
 ## 📖 Project Overview
 
-Cortex is an intelligent middleware orchestrator designed to act as the "brain" for an AI tutoring system. [cite: 14] [cite_start]It autonomously connects a conversational AI tutor to a vast library of educational tools by understanding the context of a student's conversation and dynamically extracting the necessary information to call the right tool. [cite: 13]
+Cortex is an intelligent middleware orchestrator designed to act as the "brain" for an AI tutoring system. It autonomously connects a conversational AI tutor to a vast library of educational tools by understanding the context of a student's conversation and dynamically extracting the necessary information to call the right tool.
 
 This project directly addresses the hackathon's core challenge of creating a scalable system that can handle diverse tool schemas and automate complex interactions without manual configuration. The focus is purely on the intelligent orchestration layer, not the UI or the tools themselves.
 
